@@ -1,0 +1,82 @@
+.service{
+
+    padding: 0 3rem;
+    display: flex;
+    height: 99vh;
+    display: flex;
+    margin: 9rem 0 0 0;
+    /* margin-top: 9rem;
+    margin-bottom: 8rem; */
+}
+.left{
+    flex: 1;
+}
+
+.d-btn{
+    margin-top:1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.s-blur{
+    position: absolute;
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background:#ec7cf89c;
+    /* filter: blur(212px); */
+    z-index: 0;
+    bottom: -65%;
+    left: -12%;
+    /* filter:blur(50px) */
+}
+.cards{
+    margin-top: 2rem;
+    position: relative;
+    flex: 1;
+}
+
+.cards>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.s-blur2{
+    position: absolute;
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    /* background:#7c9ff8; */
+    /* filter: blur(212px); */
+    z-index: 0;
+    top: 22%
+    /* bottom: -90%;
+    left: 2%;
+    filter:blur(50px) */
+}
+@media screen and (max-width: 480px) {
+    .service{
+        margin-top:0;
+        display: block;
+        flex-direction: column;
+        gap: 5rem;
+        height: 70rem;
+        padding:0;
+
+    }
+    .s-blur{
+        bottom: -158%;
+    left: -47%;
+    }
+
+    .cards{
+        display:flex;
+        flex-direction:column;
+        margin: 2rem;
+        gap:17rem;
+    }
+
+    .cards>*{
+        position:static;
+    }
+}

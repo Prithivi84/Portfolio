@@ -1,0 +1,118 @@
+.navbar{
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.head{
+    flex:1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-weight: 400;
+}
+
+.list{
+    flex: 10;
+}
+
+.list ul{
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+    list-style: none;
+}
+.list ul li{
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.active, .list ul li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #6c59d9;
+}
+
+
+
+  .menu-down{
+    display: none;
+  }
+  .menu2{
+    display: none;
+  }
+
+ 
+
+@media screen and (max-width: 480px) {
+   .list{
+     display:none; 
+   }
+   .menu-down{
+    display: flex;
+    margin-top: 1rem;
+    position: relative;
+   }
+   .dropbtn{
+    height: 40px;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    position: relative;
+    display: flex;
+    
+   }
+
+   
+   .dropbtn i{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transform: scale(1.5);
+   }
+   .menu2{
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: -20px;
+    bottom: -40px;
+   
+    border-radius: 10px;
+   }
+
+   .menu2 a{
+   
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    
+    display: flex;
+    font-size: smaller;
+    /* border-radius: 5px; */
+   }
+   .menu2 a:hover{
+    background:#6c59d9;
+   }
+   .menu-down:hover .menu2{
+    display: flex;
+   }
+   
+  
+
+   .n-btn{
+    display:none;
+   }
+}
