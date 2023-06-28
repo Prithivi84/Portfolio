@@ -35,24 +35,24 @@ export default function Contact() {
             <span>Get in touch</span>
             <span>Contact me</span>
             </div>
-            {/* <div className="blur"></div> */}
+           
 
         </div>
       <div className="cR">
       <form ref={form} onSubmit={sendEmail} style={{background:darkMode? '#ffffffa3':'',}}>
-		<div class="field" tabindex="1">
+		<div class="field" tabIndex="1">
 			<label for="user_name">
 				<i class="far fa-user"></i>Your Name
 			</label>
 			<input name="user_name" type="text" placeholder="e.g. john doe" required/>
 		</div>
-		<div class="field" tabindex="2">
+		<div class="field" tabIndex="2">
 			<label for="user_email">
 				<i class="far fa-envelope"></i>Your Email
 			</label>
 			<input name="user_email" type="text"  placeholder="email@domain.com" required/>
 		</div>
-		<div class="field" tabindex="3">
+		<div class="field" tabIndex="3">
 			<label for="message">
 				<i class="far fa-edit"></i>Your Message
 			</label>

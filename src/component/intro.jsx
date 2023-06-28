@@ -3,7 +3,6 @@ import './intro.css'
 // import Github from '../../src/img/github.png'
 // import Linkdin from '../../src/img/linkedin.png'
 // import Insta from '../../src/img/instagram.png'
-import Extra from './Extra'
 import Portfolio from '../../src/img/profile.png'
 import Css from '../../src/img/css3.png'
 import Busi from '../../src/img/businessman-with-target.png'
@@ -45,8 +44,8 @@ export default function intro() {
             transition={transition}
             src={emoji} alt="" className="emo"/>
             <motion.div
-            initial={{top: '-4%', left: '60%'}}
-            whileInView={{left: '98%'}}
+            initial={{top: '-4%', left: '90%'}}
+            whileInView={{left: '68%'}}
             style={{top:'-4%', left: '68%'}}
             className='floating'>
 

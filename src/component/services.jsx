@@ -1,6 +1,7 @@
 import React from 'react'
 import './services.css'
 import Card from './card'
+import Resume from '../img/Prithivi_resume.pdf'
 import Figma from '../img/figma.png'
 import react from '../img/react.png'
 import Ux from '../img/laptop.png'
@@ -18,7 +19,8 @@ export default function services(props) {
             
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Sed ea optio nemo provident! Doloremque repellat ipsa libero ducimus nemo laboriosam explicabo deserunt, dolorum, n</span>
                  </div>
-            <button className='btn d-btn'>Download CV</button>
+                 <a href={Resume} download>
+            <button className='btn d-btn'>Download CV</button></a>
             <div className="s-blur" ></div>
       </div>
       <div className="cards">
